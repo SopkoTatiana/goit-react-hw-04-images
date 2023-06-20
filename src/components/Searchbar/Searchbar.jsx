@@ -9,6 +9,7 @@ export default function Searchbar({ onSubmit }) {
   const handleInput = ({ target: { value } }) => {
     setValue(value);
   };
+
   const handleSubmit = e => {
     e.preventDefault();
 

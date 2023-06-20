@@ -41,7 +41,7 @@ export default function App() {
         if (totalHits === 0) {
           throw new Error("Couldn't find the image you requested!");
         } else {
-          setImages([...images, ...hits]);
+          setImages(prevImages => [...prevImages, ...hits]);
           setTotal(totalHits);
           setStatus(Status.SUCCESS);
         }
